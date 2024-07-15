@@ -10,7 +10,10 @@ variable "network" {}
 
 variable "instancetype" {}
 
-variable "ami" {}
+variable "ami" {
+  type = string
+  default = "ServiceNow_Windows2022_Image_2024071501"
+}
 
 variable "keyname" {}
 
